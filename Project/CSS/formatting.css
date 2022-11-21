@@ -1,0 +1,325 @@
+#title {
+	font-weight:bold;
+	text-align:center;	
+}
+body {
+	text-align:center;
+	font-family: "Times New Roman", Times, serif;
+}
+h3 {
+	font-weight:bold;
+	position: fixed;
+	left: 50%;
+	bottom: 25px;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;
+}
+.foot {
+	position: fixed;
+	left: 50%;
+	bottom: 10px;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;
+}
+.home_button {
+	position:fixed;
+	bottom:15%;
+	left:45%;
+}
+.wrap_signup {
+	width: 95%;
+	height: 75%;
+	overflow: hidden;
+}
+.instructions {
+	overflow: hidden;
+}
+div.instructions {
+	text-align: left;
+}
+.account_form {
+	width: 700px;
+	float:left
+}
+.wrap_search {
+	width: 100%;
+	height: 75%;
+	overflow: hidden;
+}
+div.container {
+	overflow: hidden;
+	position: absolute;
+	right:0;
+}
+/*Buttons for filter on search page*/
+#myBtnContainer {
+	width: 25%;
+	float:left
+}
+#myBtnContainer button {
+	background-color: #ffdead;
+	border: 1px solid black;
+	color: black; 
+	padding: 10px 24px; 
+	cursor: pointer; 
+	width: 50%;
+	display: block;
+}
+#myBtnContainer button:not(:last-child) {
+	border-bottom: none;
+}
+/* Add a background color on hover */
+.#myBtnContainer button:hover {
+	background-color: #3e8e41;
+}
+/*---------------------------------------------------*/
+.signup_button  {
+	background-color: yellow;
+}
+.signup_hide, .logout_hide, .login_hide, .search_hide, .chat_hide, .profile_hide, .settings_hide {
+	display:none;
+}
+.settings:hover + .settings_hide, .profile:hover + .profile_hide, .login:hover + .login_hide, .logout:hover + .logout_hide, .search:hover + .search_hide,  .chat:hover + .chat_hide, .signup:hover + .signup_hide {
+	display:block;
+	color: red;
+}
+#submit_box {
+	height:50px; 
+	width:175px;
+	margin: auto;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+.btn-group button {
+	background-color: #04AA6D; /* Green background */
+	border: 1px solid green; /* Green border */
+	color: white; /* White text */
+	padding: 10px 24px; /* Some padding */
+	cursor: pointer; /* Pointer/hand icon */
+	float: left; /* Float the buttons side by side */
+}
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.btn-group button:not(:last-child) {
+	border-right: none; /* Prevent double borders */
+}
+/* Add a background color on hover */
+.btn-group button:hover {
+	background-color: #3e8e41;
+}
+/*Filters on search page */
+.filterDiv {
+	float: left;
+	background-color: #2196F3;
+	color: #ffffff;
+	width: 100px;
+	line-height: 50px;
+	text-align: center;
+	margin: 2px;
+	display: none;
+}
+.show {
+	display: block;
+}
+.container {
+	margin-top: 20px;
+	overflow: hidden;
+}
+/* Style the buttons */
+.btn {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: #f1f1f1;
+	cursor: pointer;
+}
+.btn:hover {
+	background-color: #ddd;
+}
+.btn.active {
+	background-color: #666;
+	color: white;
+}
+/* Popup for profile */
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.popup .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+}
+.popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+/* Toggle this class - hide and show the popup */
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+}
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+}
+/*-------------------------------------------------*/
+/*Profile layout*/
+div.top_profile {
+	width:100%;
+	display:inline;
+	float:left;
+}
+
+div.top_left_profile {
+	width:75%;
+	float:left;
+	text-align:center;
+	border: 3px solid black;
+}
+div.top_right_profile {
+	right: 0px;
+  	width: 25%;
+	float:right;
+	padding: 10px;
+}
+.social_button {
+	width:50%;
+}
+div.bottom_profile {
+	width:100%;
+	position: relative;
+	top: 20px;
+}
+div.bottom_left_profile {
+	width:50%;
+	float:left;
+	height:40%;
+	text-align:center;
+	border: 3px solid black;
+}
+div.photo_box {
+	border: 1px solid black;
+	height:8%;
+}
+div.bottom_right_profile {
+	right:0px;
+  	width: 50%;
+	float:right;
+	padding: 2%;
+	height:40%;
+	border: 3px solid black;
+}
+.bottom_right_profile_content {
+	right: 12%;
+	top:5%;
+	float:right;
+	height:5%;
+}
+/*-------------------------------------------------*/
+/*Chat*/
+div.chat {
+	width:100%;
+	display:inline;
+	float:left;
+}
+div.left_chat {
+	width:50%;
+	float:left;
+	text-align:center;
+}
+div.chat_name, div.date_sent, div.call_icons {
+	background-color: blue;
+	border: 2px solid black;
+	color: white; 
+	padding: 10px 24px; 
+	cursor: pointer; 
+	float: left;
+	height: 50px;
+}
+div.right_chat {
+	position: absolute;
+	right: 0px;
+	width: 50%;
+	height: 60%;
+	padding: 10px;
+	border: 2px solid black;
+}
+p.chat_preview {
+	text-align: center;
+}
+/*-------------------------------------------------*/
+/*Settings layout*/
+div.settings_layout {
+	width:100%;
+	display:inline;
+	float:left;
+	width:100%;
+	position: relative;
+	top: 20px;
+}
+div.left_settings {
+	width:50%;
+	float:left;
+	height:40%;
+	text-align:center;
+	border: 3px solid black;
+}
+div.photo_box {
+	border: 1px solid black;
+	height:8%;
+}
+div.right_settings {
+	right:0px;
+  	width: 50%;
+	float:right;
+	padding: 2%;
+	height:40%;
+	border: 3px solid black;
+}
+.right_settings_content {
+	right:50%;
+	top:5%;
+	float:left;
+	height:5%;
+}
+.delete_button {
+	background-color: #008CBA;
+	color: white;
+	left:0%;
+	position: absolute;
+	top:75%;
+}
